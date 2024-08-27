@@ -1,0 +1,21 @@
+<div class="col-md-8 offset-md-3">
+<h1 class="text-center">Create Account</h1>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+        <div>
+            <label>Name</label>
+            <input type="text" id="accountHolderName" class="form-control" name="accountHolderName" [(ngModel)]="account.accountHolderName"/>
+           
+        </div>
+        <div>
+            <label>Balance</label>
+            <input type="text" id="balance" class="form-control" name="balance" [(ngModel)]="account.balance"/>
+           
+        </div>
+    </div>
+    <br>
+        <button type="submit" class="btn btn-success"> Submit</button>
+    </form>
+    
+</div>
